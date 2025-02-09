@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="d-flex  justify-content-center align-items-center vh-70">
+        <form action="Signup.php" method="post" class="w-50  bg-warning  p-3"  onsubmit="return validation">
+
+    <h3> Welcome to VBSPU Library </h3>
+    <input required class="form-control  mt=2"  type ="text" name="std_name" placeholder="Enter std_name "><br>
+    <input id="pass" required class="form-control  mt=2"type ="Password" name="Password" placeholder="Enter Password"><br>
+    <input required class="form-control  mt=2"  type ="text" name="BookName" placeholder="Enter BookName "><br>
+    <input required class="form-control  mt=2"  type ="text" name="Bookcode" placeholder="Enter Bookcode "><br>
+    <input required class="form-control  mt=2"  type ="text" name="IssueDate" placeholder="Enter IssueDate "><br>
+    <input required class="form-control  mt=2"  type ="text" name="ReturnDate" placeholder="Enter ReturnDate "><br>
+
+    <label for="">Usertype</label>
+    <br>
+
+    <select required class="form-control  mt=2"name="Usertype">
+        <option>Teacher</option>
+        <option>Student</option>
+    </select>
+    <br>
+    <div class="text-center">
+        <button class="btn btn-success mt=2">Signup</button>
+    </div>
+    <div class="text-right">
+        <button class="text-White  mt=2"  href="Login.html">Login here</button>
+    </div>
+    </form>
+    </body>
+</div>
+</html>
